@@ -1,4 +1,5 @@
 # How I setup this project
+
 - `npm init`
 - `npm i -D typescript`
 - followed tailwind parcel installation guide: https://tailwindcss.com/docs/guides/parcel
