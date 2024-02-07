@@ -6,13 +6,13 @@ import { Header } from "./Header";
 export function App() {
   return (
     <div className="flex flex-col h-screen space-between">
-      <div className="flex items-center justify-center space-x-2 basis-5/8">
+      <div className="flex items-center justify-center basis-1/2 md:basis-5/8">
         <Header />
       </div>
-      <div className="flex basis-3/8">
+      <div className="flex basis-1/2 md:basis-3/8">
         <Content />
       </div>
-      <div className="flex justify-end p-2 flex-col items-end">
+      <div className="flex justify-end p-2 flex-col items-center md:items-end">
         <Footer />
       </div>
     </div>
