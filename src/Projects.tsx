@@ -4,8 +4,8 @@ import { Link } from "./Link";
 export const Projects = () => {
   return (
     <>
-      <p className="font-mono text-3xl md:text-xs">projects:</p>
-      <div className="flex flex-col mx-8 md:mx-2">
+      <p className="font-mono text-3xl xl:text-xs">projects:</p>
+      <div className="flex flex-col mx-8 xl:mx-2">
         <Link href="https://toodles-seven.vercel.app/" name="toodles" />
         <Link href="https://bet-it.vercel.app/" name="bet-it" />
         <Link href="https://kv-scheduler.vercel.app/" name="kv-scheduler" />
