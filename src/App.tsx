@@ -5,7 +5,7 @@ import { Header } from "./Header";
 
 export function App() {
   return (
-    <div className="flex flex-col h-screen space-between">
+    <div className="flex flex-col h-svh space-between">
       <div className="flex items-center justify-center basis-1/2 xl:basis-5/8">
         <Header />
       </div>
