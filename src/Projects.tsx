@@ -1,21 +1,23 @@
 import React from "react";
-import { Link } from "./Link";
+import { Props } from "./Content";
+import { projects } from "./data";
 
-export const Projects = () => {
+export const Projects = ({ setFocusedProject }: Props) => {
   return (
     <>
       <p className="font-mono text-3xl xl:text-xs">projects:</p>
       <div className="flex flex-col mx-8 xl:mx-2">
-        <Link href="https://toodles-seven.vercel.app/" name="toodles" />
-        <Link href="https://bet-it.vercel.app/" name="bet-it" />
-        <Link href="https://kv-scheduler.vercel.app/" name="kv-scheduler" />
-        <Link href="https://abstract-ten.vercel.app/" name="abstract" />
-        <Link href="https://massage-dates.ow-ad.dev/" name="massage-dates" />
-        <Link
-          href="https://melodic-companion.vercel.app/"
-          name="melodic-companion"
-        />
-        <Link href="https://synceval.com" name="synceval (in progress)" />
+        {projects.map(({ name }) => {
+          return (
+            <p
+              key={name}
+              className="font-mono text-3xl xl:text-xs hover:text-gray-400 leading-relaxed"
+              onClick={() => setFocusedProject(name)}
+            >
+              {name}
+            </p>
+          );
+        })}
       </div>
     </>
   );
