@@ -14,19 +14,19 @@ export function App() {
   );
 
   return (
-    <div className="flex flex-col h-svh space-between relative dark:bg-gray-600">
-      <div className="flex items-center justify-center basis-1/2 dark:basis-3/8 xl:basis-5/8 dark:xl:basis-3/8">
+    <div className="flex flex-col h-svh space-between relative dark:bg-gray-600 relative">
+      <div className="flex items-center justify-center h-1/2">
         <Header />
       </div>
-      <div className="flex basis-1/2 dark:basis-5/8 xl:basis-3/8 dark:xl:basis-5/8 justify-center items-center dark:items-start">
+      <div className="flex h-1/2 justify-center items-center dark:items-start">
         <div className="dark:hidden">
           <Content
             focusedProject={focusedProjectName}
             setFocusedProject={setFocusedProject}
           />
         </div>
-        <div className="flex justify-center items-center p-2 flex-col hidden dark:inline-flex">
-          <img className="rounded-full xl:w-96" src={logo} />
+        <div className="flex justify-start items-center p-2 flex-col hidden dark:inline-flex h-full">
+          <img className="rounded-full h-4/5" src={logo} />
           <Link href="https://soundcloud.com/andreydelany" name="Soundcloud" />
         </div>
       </div>
