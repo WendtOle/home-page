@@ -28,6 +28,10 @@ export function App() {
         <div className="flex justify-start items-center p-2 flex-col hidden dark:inline-flex h-full">
           <img className="rounded-full h-4/5" src={logo} />
           <Link href="https://soundcloud.com/andreydelany" name="Soundcloud" />
+          <Link
+            href="https://music-production-docs.vercel.app/"
+            name="Documentation"
+          />
         </div>
       </div>
       <div className="flex justify-end p-2 flex-col items-center xl:items-end">
