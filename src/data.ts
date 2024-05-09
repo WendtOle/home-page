@@ -24,6 +24,7 @@ export const projects: Project[] = [
       description:
         "application for quickly calculating the daily spending limit.",
       techStack: "react, typescript, nextJS, tailwind, chartJS",
+      status: "prototyping (May 2024)",
     },
     hrefSource: "https://github.com/WendtOle/daily-spending-limit",
   },
@@ -34,7 +35,7 @@ export const projects: Project[] = [
       description:
         "app that harmonizes your Spotify faves with sizzling festival lineups",
       techStack: "react, material-ui, typescript, express, jotai",
-      status: "currently under development",
+      status: "rebuilding whole application with nextJS (May 2024)",
       highlights: "put a lot of effort in design and user experience",
     },
     hrefSource: "https://github.com/WendtOle/syncival",
