@@ -18,6 +18,38 @@ export enum Categories {
 
 export const projects: Project[] = [
   {
+    name: "syncival",
+    hrefApp: "https://syncival.com",
+    info: {
+      description:
+        "app that harmonizes your Spotify faves with sizzling festival lineups",
+      techStack: "react, material-ui, typescript, express, jotai",
+      status: "currently under development",
+      highlights: "put a lot of effort in design and user experience",
+    },
+    hrefSource: "https://github.com/WendtOle/syncival",
+  },
+  {
+    name: "melodic-companion",
+    hrefApp: "https://melodic-companion.vercel.app/",
+    info: {
+      description:
+        "app where forms glide, leaving colorful trails that linger like echoes in motion",
+      techStack: "typescript, parcel",
+    },
+    hrefSource: "https://github.com/WendtOle/moving-companion",
+  },
+  {
+    name: "abstract",
+    hrefApp: "https://abstract-ten.vercel.app/",
+    info: {
+      description:
+        "Experience beats pulsating at the core, surrounded by swirling dots that explode with bursts of color, igniting a chain reaction of visual delight",
+      highlights: "as barebone as it gets, does not use any libraries",
+    },
+    //hrefSource: "https://github.com/WendtOle/abstract", //I partially copied some code I should mention the source before I link my code
+  },
+  {
     name: "toodles",
     hrefApp: "https://toodles-seven.vercel.app/",
     hrefSource: "https://github.com/WendtOle/toodles",
@@ -45,16 +77,7 @@ export const projects: Project[] = [
       highlights: "as barebone as it gets, includes crawler for data",
     },
   },
-  {
-    name: "abstract",
-    hrefApp: "https://abstract-ten.vercel.app/",
-    info: {
-      description:
-        "Experience beats pulsating at the core, surrounded by swirling dots that explode with bursts of color, igniting a chain reaction of visual delight",
-      highlights: "as barebone as it gets, does not use any libraries",
-    },
-    //hrefSource: "https://github.com/WendtOle/abstract", //I partially copied some code I should mention the source before I link my code
-  },
+
   {
     name: "massage-dates",
     hrefApp: "https://massage-dates.ow-ad.dev/",
@@ -64,27 +87,5 @@ export const projects: Project[] = [
       highlights: "serverless backend",
     },
     //hrefSource: "https://github.com/WendtOle/vabali-scraper" // there are still some occurences of the word "vabali" - I should remove them before publishing
-  },
-  {
-    name: "melodic-companion",
-    hrefApp: "https://melodic-companion.vercel.app/",
-    info: {
-      description:
-        "app where forms glide, leaving colorful trails that linger like echoes in motion",
-      techStack: "typescript, parcel",
-    },
-    hrefSource: "https://github.com/WendtOle/moving-companion",
-  },
-  {
-    name: "syncival",
-    hrefApp: "https://syncival.com",
-    info: {
-      description:
-        "app that harmonizes your Spotify faves with sizzling festival lineups",
-      techStack: "react, material-ui, typescript, express, jotai",
-      status: "currently under development",
-      highlights: "put a lot of effort in design and user experience",
-    },
-    hrefSource: "https://github.com/WendtOle/syncival",
   },
 ];
