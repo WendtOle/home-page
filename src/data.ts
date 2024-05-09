@@ -76,8 +76,8 @@ export const projects: Project[] = [
     hrefSource: "https://github.com/WendtOle/moving-companion",
   },
   {
-    name: "synceval",
-    hrefApp: "https://synceval.com",
+    name: "syncival",
+    hrefApp: "https://syncival.com",
     info: {
       description:
         "app that harmonizes your Spotify faves with sizzling festival lineups",
@@ -85,6 +85,6 @@ export const projects: Project[] = [
       status: "currently under development",
       highlights: "put a lot of effort in design and user experience",
     },
-    hrefSource: "https://github.com/WendtOle/synceval",
+    hrefSource: "https://github.com/WendtOle/syncival",
   },
 ];
