@@ -18,6 +18,16 @@ export enum Categories {
 
 export const projects: Project[] = [
   {
+    name: "daily-spending-limit",
+    hrefApp: "https://dsl.ole-wendt.com",
+    info: {
+      description:
+        "application for quickly calculating the daily spending limit.",
+      techStack: "react, typescript, nextJS, tailwind, chartJS",
+    },
+    hrefSource: "https://github.com/WendtOle/daily-spending-limit",
+  },
+  {
     name: "syncival",
     hrefApp: "https://syncival.com",
     info: {
