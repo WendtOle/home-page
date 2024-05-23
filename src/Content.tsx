@@ -1,11 +1,9 @@
 import React from "react";
 import { Link } from "./Link";
-import { Projects } from "./Projects";
+import { List } from "./List";
+import { projects } from "./data";
 
-export interface Props {
-  focusedProject: string | null;
-  setFocusedProject: (value: string) => void;
-}
+export interface Props {}
 
 export const Content = (props: Props) => {
   return (
@@ -14,7 +12,7 @@ export const Content = (props: Props) => {
         <Link href="https://github.com/WendtOle">
           my <span className="uppercase underline">github</span> profile
         </Link>
-        <Projects {...props} />
+        <List title="projects" entries={projects} />
       </div>
     </div>
   );
