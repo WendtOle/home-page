@@ -1,10 +1,11 @@
 import React from "react";
-import { Project } from "./data";
+import { Challenge, Project } from "./data";
 import { ProjectInformationModal } from "./ProjectInformationModal";
+import { ChallengeModal } from "./ChallengeModal";
 
 interface ListProps {
   title: string;
-  entries: Project[];
+  entries: Array<Project | Challenge>;
 }
 
 export const List = ({ entries, title }: ListProps) => {
@@ -22,7 +23,11 @@ export const List = ({ entries, title }: ListProps) => {
               >
                 {entry.name}
               </button>
-              <ProjectInformationModal project={entry} />
+              {"info" in entry ? (
+                <ProjectInformationModal project={entry} />
+              ) : (
+                <ChallengeModal challenge={entry} />
+              )}
             </>
           );
         })}

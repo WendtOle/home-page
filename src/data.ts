@@ -2,6 +2,7 @@ import dsl from "./daily-spending-limit.png";
 import syncival from "./syncival.png";
 import melodicCompanion from "./melodic-companion.png";
 import abstract from "./abstract.png";
+import icodethis from "./i-code-this.png";
 
 export interface Project {
   name: string;
@@ -13,6 +14,13 @@ export interface Project {
   status?: string;
   info: Partial<Record<Categories, string>>;
   imagePath?: string;
+}
+
+export interface Challenge {
+  name: string;
+  hrefApp: string;
+  description: string;
+  imagePaths: string[];
 }
 
 export enum Categories {
@@ -113,5 +121,14 @@ export const projects: Project[] = [
       highlights: "serverless backend",
     },
     //hrefSource: "https://github.com/WendtOle/vabali-scraper" // there are still some occurences of the word "vabali" - I should remove them before publishing
+  },
+];
+
+export const contributions: Challenge[] = [
+  {
+    name: "icodethis",
+    description: "took a few challenges",
+    hrefApp: "https://icodethis.com/WendtOle",
+    imagePaths: [icodethis],
   },
 ];

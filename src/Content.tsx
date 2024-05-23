@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "./Link";
 import { List } from "./List";
-import { projects } from "./data";
+import { contributions, projects } from "./data";
 
 export interface Props {}
 
@@ -13,6 +13,7 @@ export const Content = (props: Props) => {
           my <span className="uppercase underline">github</span> profile
         </Link>
         <List title="projects" entries={projects} />
+        <List title="contributions" entries={contributions} />
       </div>
     </div>
   );
