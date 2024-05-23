@@ -5,7 +5,7 @@ export const Modal = ({ children, id }: { children: any; id: string }) => {
     <div
       popover="auto"
       id={id}
-      className="dialog p-8 drop-shadow-xl rounded-lg w-11/12 h-fit xl:w-fit"
+      className="dialog p-8 shadow-xl rounded-lg w-11/12 h-fit xl:w-fit"
     >
       <div className="flex justify-end">
         <button
