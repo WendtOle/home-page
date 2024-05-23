@@ -1,6 +1,6 @@
 export interface Project {
   name: string;
-  hrefApp: string;
+  hrefApp?: string;
   hrefSource?: string;
   description?: string;
   techStack?: string;
@@ -39,6 +39,11 @@ export const projects: Project[] = [
       highlights: "put a lot of effort in design and user experience",
     },
     hrefSource: "https://github.com/WendtOle/syncival",
+  },
+  {
+    name: "my-home-page",
+    info: { description: "is this home page" },
+    hrefSource: "https://github.com/WendtOle/home-page",
   },
   {
     name: "melodic-companion",

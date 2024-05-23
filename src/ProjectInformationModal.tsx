@@ -35,12 +35,14 @@ export const ProjectInformationModal = ({
             )
           );
         })}
-        <p className="font-mono text-3xl xl:text-xs">
-          go to{" "}
-          <a className="underline" target="_blank" href={project.hrefApp}>
-            {project.name}
-          </a>
-        </p>
+        {project.hrefApp && (
+          <p className="font-mono text-3xl xl:text-xs">
+            go to{" "}
+            <a className="underline" target="_blank" href={project.hrefApp}>
+              {project.name}
+            </a>
+          </p>
+        )}
         {project.hrefSource && (
           <p className="font-mono text-3xl xl:text-xs">
             go to{" "}

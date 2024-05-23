@@ -4,7 +4,7 @@ import { projects } from "./data";
 
 export const Projects = ({ setFocusedProject }: Props) => {
   return (
-    <>
+    <div>
       <p className="font-mono text-3xl xl:text-xs">projects:</p>
       <div className="flex flex-col mx-8 xl:mx-2">
         {projects.map(({ name }) => {
@@ -19,6 +19,6 @@ export const Projects = ({ setFocusedProject }: Props) => {
           );
         })}
       </div>
-    </>
+    </div>
   );
 };
