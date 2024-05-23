@@ -1,3 +1,8 @@
+import dsl from "./daily-spending-limit.png";
+import syncival from "./syncival.png";
+import melodicCompanion from "./melodic-companion.png";
+import abstract from "./abstract.png";
+
 export interface Project {
   name: string;
   hrefApp?: string;
@@ -7,6 +12,7 @@ export interface Project {
   highlights?: string;
   status?: string;
   info: Partial<Record<Categories, string>>;
+  imagePath?: string;
 }
 
 export enum Categories {
@@ -27,6 +33,7 @@ export const projects: Project[] = [
       status: "prototyping (May 2024)",
     },
     hrefSource: "https://github.com/WendtOle/daily-spending-limit",
+    imagePath: dsl,
   },
   {
     name: "syncival",
@@ -39,6 +46,7 @@ export const projects: Project[] = [
       highlights: "put a lot of effort in design and user experience",
     },
     hrefSource: "https://github.com/WendtOle/syncival",
+    imagePath: syncival,
   },
   {
     name: "my-home-page",
@@ -54,6 +62,7 @@ export const projects: Project[] = [
       techStack: "typescript, parcel",
     },
     hrefSource: "https://github.com/WendtOle/moving-companion",
+    imagePath: melodicCompanion,
   },
   {
     name: "abstract",
@@ -64,6 +73,7 @@ export const projects: Project[] = [
       highlights: "as barebone as it gets, does not use any libraries",
     },
     //hrefSource: "https://github.com/WendtOle/abstract", //I partially copied some code I should mention the source before I link my code
+    imagePath: abstract,
   },
   {
     name: "toodles",
