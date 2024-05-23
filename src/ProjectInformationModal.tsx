@@ -1,5 +1,6 @@
 import React from "react";
 import { Categories, Project } from "./data";
+import { Modal } from "./Modal";
 
 const categoryTitle: Record<Categories, string> = {
   [Categories.DESCRIPTION]: "what it does",
@@ -10,20 +11,7 @@ const categoryTitle: Record<Categories, string> = {
 
 export const ProjectInformationModal = ({ project }: { project: Project }) => {
   return (
-    <div
-      popover="auto"
-      id={project.name}
-      className="dialog p-8 drop-shadow-xl rounded-lg w-11/12 h-fit xl:w-fit"
-    >
-      <div className="flex justify-end">
-        <button
-          className="uppercase p-2 font-thin hover:text-slate-500 text-2xl xl:text-base"
-          popovertarget={project.name}
-          popovertargetaction="hide"
-        >
-          Close
-        </button>
-      </div>
+    <Modal id={project.name}>
       <div className="flex space-x-8 flex-row">
         <div>
           <h1 className="text-5xl xl:text-xl font-mono">{project.name}</h1>
@@ -72,6 +60,6 @@ export const ProjectInformationModal = ({ project }: { project: Project }) => {
           </div>
         )}
       </div>
-    </div>
+    </Modal>
   );
 };
