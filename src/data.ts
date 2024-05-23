@@ -1,7 +1,6 @@
 import dsl from "./daily-spending-limit.png";
 import syncival from "./syncival.png";
 import melodicCompanion from "./melodic-companion.png";
-import abstract from "./abstract.png";
 import icodethis from "./i-code-this.png";
 
 export interface Project {
@@ -81,7 +80,6 @@ export const projects: Project[] = [
       highlights: "as barebone as it gets, does not use any libraries",
     },
     //hrefSource: "https://github.com/WendtOle/abstract", //I partially copied some code I should mention the source before I link my code
-    imagePath: abstract,
   },
   {
     name: "toodles",
