@@ -13,11 +13,10 @@ export const List = ({ entries, title }: ListProps) => {
     <div>
       <p className="font-mono text-3xl xl:text-xs">{title}:</p>
       <div className="flex flex-col mx-8 xl:mx-2">
-        {entries.map((entry) => {
+        {entries.map((entry, index) => {
           return (
-            <>
+            <div key={entry.name + index}>
               <button
-                key={entry.name}
                 className="font-mono text-3xl xl:text-xs hover:text-gray-400 leading-relaxed text-left"
                 popovertarget={entry.name}
               >
@@ -28,7 +27,7 @@ export const List = ({ entries, title }: ListProps) => {
               ) : (
                 <ChallengeModal challenge={entry} />
               )}
-            </>
+            </div>
           );
         })}
       </div>

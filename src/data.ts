@@ -1,7 +1,10 @@
 import dsl from "./daily-spending-limit.png";
+import dsl2 from "./dsl-2.jpg";
 import syncival from "./syncival.png";
 import melodicCompanion from "./melodic-companion.png";
-import icodethis from "./i-code-this.png";
+import icodethis1 from "./i-code-this-1.png";
+import icodethis2 from "./i-code-this-2.png";
+import favouriteArtists from "./favourite-artists.jpeg";
 
 export interface Project {
   name: string;
@@ -12,7 +15,7 @@ export interface Project {
   highlights?: string;
   status?: string;
   info: Partial<Record<Categories, string>>;
-  imagePath?: string;
+  imagePath?: string | string[];
 }
 
 export interface Challenge {
@@ -36,11 +39,23 @@ export const projects: Project[] = [
     info: {
       description:
         "application for quickly calculating the daily spending limit.",
-      techStack: "react, typescript, nextJS, tailwind, chartJS",
-      status: "prototyping (May 2024)",
+      techStack: "react, typescript, nextJS, tailwind",
+      status: "prototyping (July 2024)",
     },
     hrefSource: "https://github.com/WendtOle/daily-spending-limit",
-    imagePath: dsl,
+    imagePath: [dsl, dsl2],
+  },
+  {
+    name: "favorite-artists",
+    hrefApp: "https://favourite-artists.vercel.app/",
+    info: {
+      description:
+        "application for checking your top spotify artists and tracks.",
+      techStack: "react, typescript, nextJS, tailwind",
+      status: "prototyping (July 2024)",
+    },
+    hrefSource: "https://github.com/WendtOle/favourite-artists",
+    imagePath: favouriteArtists,
   },
   {
     name: "syncival",
@@ -127,6 +142,6 @@ export const contributions: Challenge[] = [
     name: "icodethis",
     description: "took a few challenges",
     hrefApp: "https://icodethis.com/WendtOle",
-    imagePaths: [icodethis],
+    imagePaths: [icodethis1, icodethis2],
   },
 ];

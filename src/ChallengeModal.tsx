@@ -11,12 +11,14 @@ export const ChallengeModal = ({ challenge }: { challenge: Challenge }) => {
         <p className="font-mono text-3xl xl:text-xs pb-4 pl-8 xl:pl-4 xl:pb-2">
           {description}
         </p>
-        {imagePaths.map((path) => {
+        {imagePaths.map((path, index) => {
           return (
-            <img
-              className="xl:max-h-96 xl:max-w-96 drop-shadow-lg"
-              src={path}
-            />
+            <div className="m-auto" key={path}>
+              <img
+                className="xl:max-h-96 xl:max-w-96 drop-shadow-lg"
+                src={path}
+              />
+            </div>
           );
         })}
         {hrefApp && (
