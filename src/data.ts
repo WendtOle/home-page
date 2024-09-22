@@ -34,6 +34,16 @@ export enum Categories {
 
 export const projects: Project[] = [
   {
+    name: "budgetier",
+    hrefApp: "https://budgetier.ole-wendt.com",
+    info: {
+      description:
+        "application for planning monthly budget.",
+      techStack: "svelte, sveltekit, typescript, nextJS, tailwind",
+      status: "prototyping (September 2024)",
+    }
+  },
+  {
     name: "daily-spending-limit",
     hrefApp: "https://dsl.ole-wendt.com",
     info: {
