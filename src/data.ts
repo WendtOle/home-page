@@ -34,6 +34,16 @@ export enum Categories {
 
 export const projects: Project[] = [
   {
+    name: "ForestShuffle Automata",
+    hrefApp: "https://automata-seven.vercel.app/",
+    info: {
+      description:
+        "Automata card deck for the game forest shuffle.",
+      techStack: "svelte, sveltekit, typescript",
+      status: "prototyping (Oktober 2024)",
+    }
+  },
+  {
     name: "budgetier",
     hrefApp: "https://budgetier.ole-wendt.com",
     info: {
