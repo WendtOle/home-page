@@ -7,6 +7,7 @@ import icodethis2 from "./i-code-this-2.png";
 import favouriteArtists from "./favourite-artists.jpeg";
 import forestShuffle01 from "./img/forestshuffle-automata-01.png";
 import forestShuffle02 from "./img/forestshuffle-automata-02.png";
+import budgetier01 from "./img/budgetier-01.png";
 
 export interface Project {
   name: string;
@@ -50,11 +51,11 @@ export const projects: Project[] = [
     name: "budgetier",
     hrefApp: "https://budgetier.ole-wendt.com",
     info: {
-      description:
-        "application for planning monthly budget.",
+      description: "application for planning monthly budget.",
       techStack: "svelte, sveltekit, typescript, nextJS, tailwind",
       status: "prototyping (September 2024)",
-    }
+    },
+    imagePath: [budgetier01],
   },
   {
     name: "daily-spending-limit",
@@ -63,7 +64,7 @@ export const projects: Project[] = [
       description:
         "application for quickly calculating the daily spending limit.",
       techStack: "react, typescript, nextJS, tailwind",
-      status: "prototyping (July 2024)",
+      status: "completed for now (Oktober 2024)",
     },
     hrefSource: "https://github.com/WendtOle/daily-spending-limit",
     imagePath: [dsl, dsl2],
