@@ -5,6 +5,8 @@ import melodicCompanion from "./melodic-companion.png";
 import icodethis1 from "./i-code-this-1.png";
 import icodethis2 from "./i-code-this-2.png";
 import favouriteArtists from "./favourite-artists.jpeg";
+import forestShuffle01 from "./img/forestshuffle-automata-01.png";
+import forestShuffle02 from "./img/forestshuffle-automata-02.png";
 
 export interface Project {
   name: string;
@@ -35,13 +37,14 @@ export enum Categories {
 export const projects: Project[] = [
   {
     name: "ForestShuffle Automata",
-    hrefApp: "https://automata-seven.vercel.app/",
+    hrefApp: "https://forestshuffle-automata.ole-wendt.com",
     info: {
-      description:
-        "Automata card deck for the game forest shuffle.",
+      description: "Automata card deck for the game forest shuffle.",
       techStack: "svelte, sveltekit, typescript",
-      status: "prototyping (Oktober 2024)",
-    }
+      status: "completed for now (Oktober 2024)",
+    },
+    hrefSource: "https://github.com/WendtOle/forestshuffle-automata",
+    imagePath: [forestShuffle01, forestShuffle02],
   },
   {
     name: "budgetier",
