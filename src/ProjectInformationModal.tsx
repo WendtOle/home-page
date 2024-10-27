@@ -17,7 +17,7 @@ export const ProjectInformationModal = ({ project }: { project: Project }) => {
       : [project.imagePath];
   return (
     <Modal id={project.name}>
-      <div className="flex space-x-8 flex-row">
+      <div className="flex space-x-8 flex-row text-left">
         <div>
           <h1 className="text-5xl xl:text-xl font-mono">{project.name}</h1>
           {Object.entries(categoryTitle).map(([key, title], index) => {

@@ -12,12 +12,12 @@ export const List = ({ entries, title }: ListProps) => {
   return (
     <div>
       <p className="font-mono text-3xl xl:text-xs">{title}:</p>
-      <div className="flex flex-col mx-8 xl:mx-2">
+      <div className="grid grid-cols-2 mx-8 my-1 xl:mx-2">
         {entries.map((entry, index) => {
           return (
-            <div key={entry.name + index}>
+            <div key={entry.name + index} className="text-left even:text-right">
               <button
-                className="font-mono text-3xl xl:text-xs hover:text-gray-400 leading-relaxed text-left"
+                className="font-mono text-3xl xl:text-xs hover:text-gray-400 leading-relaxed"
                 popovertarget={entry.name}
               >
                 {entry.name}
