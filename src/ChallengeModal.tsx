@@ -11,6 +11,7 @@ export const ChallengeModal = ({ challenge }: { challenge: Challenge }) => {
         <p className="font-mono text-3xl xl:text-xs pb-4 pl-8 xl:pl-4 xl:pb-2">
           {description}
         </p>
+        <div className="flex gap-4">
         {imagePaths.map((path, index) => {
           return (
             <div className="m-auto" key={path}>
@@ -21,6 +22,7 @@ export const ChallengeModal = ({ challenge }: { challenge: Challenge }) => {
             </div>
           );
         })}
+        </div>
         {hrefApp && (
           <p className="font-mono text-3xl xl:text-xs">
             go to{" "}
