@@ -18,9 +18,11 @@ export function App() {
         <div className="flex justify-center items-center p-2 flex-col hidden dark:inline-flex h-full">
           <img className="rounded-full h-1/2" src={logo} />
           <div className="flex flex-col items-center gap-4 my-8">
-            <Link href="https://soundcloud.com/andreydelany">Soundcloud</Link>
+            <Link href="https://soundcloud.com/andreydelany">Tracks (Soundcloud)</Link>
+            <Link href="https://www.youtube.com/playlist?list=PL-b43E3nNxKCYNcCHdJe6_336K-rEwROI">Improvisations (Youtube)</Link>
+            <Link href="https://www.youtube.com/playlist?list=PL-b43E3nNxKD7jLbOn6glN26ZsGlaQiIW">Sessions (Youtube)</Link>
             <Link href="https://music-production-docs.vercel.app/">
-              Documentation
+              My music production, improvisation and streaming wiki
             </Link>
           </div>
         </div>
