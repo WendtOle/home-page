@@ -22,7 +22,7 @@ export function App() {
             <Link href="https://www.youtube.com/playlist?list=PL-b43E3nNxKCYNcCHdJe6_336K-rEwROI">Improvisations (Youtube)</Link>
             <Link href="https://www.youtube.com/playlist?list=PL-b43E3nNxKD7jLbOn6glN26ZsGlaQiIW">Sessions (Youtube)</Link>
             <Link href="https://music-production-docs.vercel.app/">
-              My music production, improvisation and streaming wiki
+              Music production wiki
             </Link>
           </div>
         </div>
