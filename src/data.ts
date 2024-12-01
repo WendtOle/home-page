@@ -168,4 +168,10 @@ export const contributions: Challenge[] = [
     hrefApp: "https://icodethis.com/WendtOle",
     imagePaths: [icodethis1, icodethis2],
   },
+  {
+    name: "adventofcode-24",
+    description: "trying my best",
+    hrefApp: "https://github.com/WendtOle/advent-of-code-24",
+    imagePaths: []
+  },
 ];
