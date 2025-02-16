@@ -151,7 +151,7 @@ export const projects: Project[] = [
 
   {
     name: "massage-dates",
-    hrefApp: "https://massage-dates.ow-ad.dev/",
+    hrefApp: "https://massage-dates.ole-wendt.com/",
     info: {
       description: "eases the search for a massage appointment",
       techStack: "react, material-ui, typescript, serverless",
