@@ -8,6 +8,8 @@ import favouriteArtists from "./favourite-artists.jpeg";
 import forestShuffle01 from "./img/forestshuffle-automata-01.png";
 import forestShuffle02 from "./img/forestshuffle-automata-02.png";
 import budgetier01 from "./img/budgetier-01.png";
+import eventCalendar01 from "./img/event-calendar-01.png";
+import eventCalendar02 from "./img/event-calendar-02.png";
 
 export interface Project {
   name: string;
@@ -36,6 +38,17 @@ export enum Categories {
 }
 
 export const projects: Project[] = [
+  {
+    name: "Event calendar",
+    hrefApp: "https://events.ole-wendt.com",
+    info: {
+      description: "Event exploration tool.",
+      techStack: "nextjs, tailwind, leaflet",
+      status: "prototpying (June 2025)",
+    },
+    hrefSource: "https://github.com/WendtOle/event-calendar",
+    imagePath: [eventCalendar01, eventCalendar02],
+  },
   {
     name: "ForestShuffle Automata",
     hrefApp: "https://forestshuffle-automata.ole-wendt.com",
@@ -172,6 +185,6 @@ export const contributions: Challenge[] = [
     name: "adventofcode-24",
     description: "trying my best",
     hrefApp: "https://github.com/WendtOle/advent-of-code-24",
-    imagePaths: []
+    imagePaths: [],
   },
 ];
