@@ -96,7 +96,6 @@ export const projects: Project[] = [
   },
   {
     name: "syncival",
-    hrefApp: "https://syncival.com",
     info: {
       description:
         "app that harmonizes your Spotify faves with sizzling festival lineups",
