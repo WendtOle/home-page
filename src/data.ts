@@ -51,6 +51,13 @@ export const projects: Project[] = [
     imagePath: [sideStreet01, sideStreet02]
   },
   {
+    name: "Molly House onboarding",
+    info: {
+      description: "Allows (hopefully) an easier start into a game of Molly House.",
+    },
+    hrefApp: "https://wendtole.github.io/molly-house-onboarding/"
+  },
+  {
     name: "Postal code assemble",
     info: {
       description: "Utility to define areas in Berlin for finding a flat.",
