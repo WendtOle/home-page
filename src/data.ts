@@ -10,6 +10,9 @@ import forestShuffle02 from "./img/forestshuffle-automata-02.png";
 import budgetier01 from "./img/budgetier-01.png";
 import eventCalendar01 from "./img/event-calendar-01.png";
 import eventCalendar02 from "./img/event-calendar-02.png";
+import sideStreet01 from "./img/sidestreet-1.png";
+import sideStreet02 from "./img/sidestreet-2.png";
+import postalCodeAssemble from "./img/postal-code-assemble.png";
 
 export interface Project {
   name: string;
@@ -38,6 +41,23 @@ export enum Categories {
 }
 
 export const projects: Project[] = [
+  {
+    name: "Sidestreet",
+    info: {
+      description: "Gamify your walk around the neighbourhood.",
+      techStack: "Swift, SwiftUi, MapKit",
+      status: "preparing for release in AppStore (Fall 2026)",
+    },
+    imagePath: [sideStreet01, sideStreet02]
+  },
+  {
+    name: "Postal code assemble",
+    info: {
+      description: "Utility to define areas in Berlin for finding a flat.",
+    },
+    hrefApp: "https://postal-code-assemble.vercel.app/",
+    imagePath: [postalCodeAssemble]
+  },
   {
     name: "Event calendar",
     hrefApp: "https://events.ole-wendt.com",
@@ -159,18 +179,7 @@ export const projects: Project[] = [
       description: "eases the use of the appropriate doctor close to you",
       highlights: "as barebone as it gets, includes crawler for data",
     },
-  },
-
-  {
-    name: "massage-dates",
-    hrefApp: "https://massage-dates.ole-wendt.com/",
-    info: {
-      description: "eases the search for a massage appointment",
-      techStack: "react, material-ui, typescript, serverless",
-      highlights: "serverless backend",
-    },
-    //hrefSource: "https://github.com/WendtOle/vabali-scraper" // there are still some occurences of the word "vabali" - I should remove them before publishing
-  },
+  }
 ];
 
 export const contributions: Challenge[] = [
